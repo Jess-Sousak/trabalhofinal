@@ -1,0 +1,49 @@
+
+create table Produto
+(idproduto int not null primary key,
+  nmproduto varchar(50) not null,
+  categoria varchar(80) null,
+  pcproduto decimal(6,2) not null
+);
+
+create table Vedendor
+(idvendedor int not null primary key,
+nmvendedor varchar(50) not null,
+email varchar(30) null,
+);
+
+create table Cliente
+(idcliente int not null primary key,
+nmcliente varchar(50) not null,
+cpf varchar(11) not null,
+endereco varchar(80) null,
+tipodepagamento varchar(30) null,
+);
+
+create table Vendas 
+(idvendas int not null primary key,
+idproduto int not null,
+idvendedor int not null,
+idcliente int not null,
+faturamento 
+nf
+
+exemplos de insert:
+INSERT INTO "Produto" ("idproduto","nmproduto","categoria","pcproduto") VALUES (0001,'Camisas Promocionais','Vestuário','R$49,99'),
+(0002,'Maquiagem e acessórios','Cosméticos e Variedades','Apartir de R$20,00')
+(0003,'Celular e adereços eletrônicos','Tecnologia','Apartir de R$30,00')
+(0004,'Desenho personalizado','Gráfica','R$25,00')
+(0005,'Embalagens','Papelaria',Apartir de R$15,00')
+
+INSERT INTO "Vendedor" ("idvendedor","nmvendedor","email") VALUES (741,'Steven Park','stevenpark@gmail.com'),
+ (742,'Lauren DiCapril','LaurenDiCap@gmail.com'),
+ (743,'Seung Kim','KimSeung@gmail.com');
+ (744,'Solar Lee','LeeSolar@gmail.com');
+
+INSERT INTO "Cliente" ("idvendedor","nmcliente","cpf","endereço") VALUES (321,'Jéssica Freitas',),
+ (322,'2ºandar'),
+ (323,'1ºandar');
+INSERT INTO "Vendas" ("id_turma","id_aluno","id_sala","id_professor","disciplina","horario") VALUES (232,124,322,742,'FRANCE','08:00 as 12:00'),
+ (231,127,321,741,'ENGLISH','14:00 as 17:00'),
+ (233,126,323,743,'KOREA','18:00 as 22:00');
+COMMIT;
