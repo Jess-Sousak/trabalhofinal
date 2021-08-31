@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Conexao
+comment1.params=
+comment1.target=Conexao()
+comment2.params=connection
+comment2.target=void\ setConnection(java.sql.Connection)
+comment3.params=
+comment3.target=java.sql.Connection\ getConnection()
+comment4.params=
+comment4.target=boolean\ abrirConexao()
+comment5.params=
+comment5.target=boolean\ fecharConexao()
+numComments=6

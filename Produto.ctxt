@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Produto
+comment1.params=conexao
+comment1.target=Produto(java.sql.Connection)
+comment2.params=nome\ cod\ pre\u00E7o\ setor\ quantidade
+comment2.target=boolean\ adicionarNovoProduto(java.lang.String,\ int,\ double,\ java.lang.String,\ int)
+comment3.params=id
+comment3.target=boolean\ consultaEstoqueId(int)
+comment4.params=produto
+comment4.target=boolean\ pesquisarProduto(java.lang.String)
+numComments=5
